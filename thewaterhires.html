@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Water Hires</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="page">
+
+<header>
+<span class="brand">THE WATER HIRES</span>
+<nav>
+<a href="#privacy">Privacy</a>
+<a href="#cookies">Cookies</a>
+</nav>
+</header>
+
+<main>
+<div class="stage">
+
+<div class="drop" aria-hidden="true"></div>
+
+<div class="globe" id="globe" tabindex="0" role="group" aria-label="Interactive water globe. Drag it, or use the arrow keys, to turn it in any direction.">
+
+<div class="ripple" aria-hidden="true"></div>
+<div class="ripple r2" aria-hidden="true"></div>
+
+<div class="tilt" id="tilt" aria-hidden="true">
+<div class="water">
+<svg class="wave-back" viewBox="0 0 200 20" preserveAspectRatio="none" aria-hidden="true"><path d="M0 10 Q 12.5 0 25 10 T 50 10 T 75 10 T 100 10 T 125 10 T 150 10 T 175 10 T 200 10 V20 H0 Z" fill="#5a5ae0" fill-opacity=".45"/></svg>
+<div class="body"></div>
+<svg class="wave-front" viewBox="0 0 200 20" preserveAspectRatio="none" aria-hidden="true"><path d="M0 10 Q 12.5 0 25 10 T 50 10 T 75 10 T 100 10 T 125 10 T 150 10 T 175 10 T 200 10 V20 H0 Z" fill="#2a2ac0"/></svg>
+</div>
+
+<svg class="fill-all net" viewBox="0 0 100 100" aria-hidden="true">
+<defs>
+<linearGradient id="whFadeG" gradientUnits="userSpaceOnUse" x1="0" y1="53" x2="0" y2="61"><stop offset="0" stop-color="#ffffff" stop-opacity="0"/><stop offset="1" stop-color="#ffffff" stop-opacity="1"/></linearGradient>
+<mask id="whWaterMask" maskUnits="userSpaceOnUse" x="0" y="0" width="100" height="100"><rect x="0" y="0" width="100" height="100" fill="url(#whFadeG)"/></mask>
+</defs>
+<g mask="url(#whWaterMask)">
+<path id="links" d="" fill="none" stroke="#FFFFFD" stroke-opacity=".5" stroke-width=".35"/>
+<path id="dotsSmall" class="glow2" d="" fill="none" stroke="#FFFFFD" stroke-width="2" stroke-linecap="round"/>
+<path id="dotsBig" class="glow" d="" fill="none" stroke="#FFFFFD" stroke-width="3" stroke-linecap="round"/>
+</g>
+</svg>
+</div>
+
+<svg class="fill-all" viewBox="0 0 100 100" style="pointer-events:none" aria-hidden="true">
+<path id="gridBack" d="" fill="none" stroke="#7b86ff" stroke-opacity=".12" stroke-width=".3"/>
+<path id="gridFront" d="" fill="none" stroke="#7b86ff" stroke-opacity=".5" stroke-width=".3"/>
+</svg>
+
+<div class="title">
+<h1>
+<svg viewBox="0 0 100 90.5" role="img" aria-label="The Water Hires">
+<g fill="#10107D" style="font-family:'Inter',system-ui,sans-serif;font-weight:800;font-kerning:none;font-feature-settings:'kern' 0">
+<text x="-1.48" y="33.5" style="font-size:46px;letter-spacing:5.05px">THE</text>
+<text x="-0.63" y="61" style="font-size:27.5px;letter-spacing:-0.69px">WATER</text>
+<text x="-1.64" y="89.6" style="font-size:29px;letter-spacing:4.16px">HIRES</text>
+</g>
+</svg>
+</h1>
+</div>
+
+<svg class="fill-all" viewBox="0 0 100 100" style="pointer-events:none" aria-hidden="true">
+<ellipse cx="22" cy="68" rx="4.5" ry="15" transform="rotate(14 22 68)" fill="rgba(255,255,253,.22)"/>
+<ellipse cx="30" cy="20" rx="12" ry="6" transform="rotate(-32 30 20)" fill="rgba(255,255,253,.8)"/>
+</svg>
+
+</div>
+</div>
+
+<!-- <p class="hint">Drag the globe to turn it, left to right or top to bottom.</p> -->
+
+<section class="cta" id="cta">
+<!-- <p class="eyebrow">Work / Recruitment Marketplace</p> -->
+<p class="eyebrow">A specialised talent marketplace connecting scientific consultants with environmental and water projects, public and private.</p>
+<h2>Join our Water Links</h2>
+<div class="cards">
+<div class="card">
+<button class="btn solid" id="btnSeeker" type="button">JOB SEEKER ENROLLMENT</button>
+<p>£1 for yearly membership. Build your profile by field of study and level, add your photo, and share a QR code that opens your profile.</p>
+</div>
+<div class="card">
+<button class="btn outline" id="btnEmployer" type="button">EMPLOYER ENROLLMENT</button>
+<p>Monthly membership for access to the talent database. Post job adverts, search by location, and select your interviewers.</p>
+</div>
+</div>
+
+<div class="consent">
+<input id="consent" type="checkbox">
+<label for="consent">I accept the Data Protection Privacy Policy and the Cookie Policy.</label>
+</div>
+<div class="status" id="status" aria-live="polite"></div>
+</section>
+</main>
+
+<footer>
+<span id="privacy">The Water Hires. Promoting human employment and water sustainability.</span>
+<span id="cookies"><a href="#privacy">Privacy Policy</a> &nbsp;·&nbsp; <a href="#cookies">Cookie Page</a></span>
+</footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
